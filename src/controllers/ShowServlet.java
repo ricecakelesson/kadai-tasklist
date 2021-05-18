@@ -36,7 +36,7 @@ public class ShowServlet extends HttpServlet {
         // TODO Auto-generated method stub
         EntityManager em = DBUtil.createEntityManager();
 
-        // 該当のIDのメッセージ1件のみをデータベースから取得
+        // 該当のIDのタスク1件のみをデータベースから取得
         Task m = em.find(Task.class, Integer.parseInt(request.getParameter("id")));
 
         em.close();
